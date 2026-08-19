@@ -9,38 +9,44 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background: #ffffff;
-            color: #222222;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            background: white;
+            line-height: 1.6;
         }
 
         header {
-            background: #f5f7fa;
-            padding: 80px 20px;
+            background: #f4f6f8;
             text-align: center;
+            padding: 80px 20px;
         }
 
         header h1 {
             font-size: 48px;
-            margin-bottom: 10px;
+            margin: 0 0 10px;
         }
 
         header p {
             font-size: 20px;
-            color: #555555;
+            color: #555;
+            margin: 0;
         }
 
         nav {
             text-align: center;
             padding: 20px;
-            border-bottom: 1px solid #dddddd;
+            border-bottom: 1px solid #ddd;
         }
 
         nav a {
             margin: 0 15px;
+            color: #333;
             text-decoration: none;
-            color: #333333;
+        }
+
+        nav a:hover {
+            color: #0066cc;
         }
 
         section {
@@ -54,22 +60,27 @@
             margin-bottom: 20px;
         }
 
-        .research {
+        .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
 
         .card {
-            border: 1px solid #dddddd;
-            padding: 25px;
+            border: 1px solid #ddd;
             border-radius: 8px;
+            padding: 25px;
+        }
+
+        .card h3 {
+            margin-top: 0;
         }
 
         footer {
             text-align: center;
+            background: #f4f6f8;
             padding: 30px;
-            background: #f5f7fa;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -78,11 +89,7 @@
 
     <header>
         <h1>Ankon Debnath</h1>
-
-        <p>
-            Mechanical Engineering Student | Additive Manufacturing |
-            Computational Mechanics
-        </p>
+        <p>Mechanical Engineering Student | Additive Manufacturing | Computational Mechanics</p>
     </header>
 
     <nav>
@@ -96,22 +103,22 @@
         <h2>About Me</h2>
 
         <p>
-            I am a mechanical engineering student interested in
-            additive manufacturing, polymer materials, computational
-            mechanics, and nature-inspired structures.
+            I am a mechanical engineering student interested in additive
+            manufacturing, polymer materials, computational mechanics,
+            and nature-inspired structures.
         </p>
 
         <p>
-            My current research interests include multimaterial 3D
-            printing, polymer interfaces, nature-inspired architectures,
-            and finite element analysis.
+            My current research interests include multimaterial 3D printing,
+            polymer interfaces, nature-inspired architectures, and finite
+            element analysis.
         </p>
     </section>
 
     <section id="research">
         <h2>Research Interests</h2>
 
-        <div class="research">
+        <div class="cards">
 
             <div class="card">
                 <h3>Additive Manufacturing</h3>
@@ -124,9 +131,8 @@
             <div class="card">
                 <h3>Nature-Inspired Structures</h3>
                 <p>
-                    Studying bio-inspired architectures such as
-                    nacre-like structures for improved mechanical
-                    performance.
+                    Bio-inspired architectures such as nacre-like
+                    structures for improved mechanical performance.
                 </p>
             </div>
 
@@ -144,43 +150,35 @@
     <section id="projects">
         <h2>Projects</h2>
 
-        <div class="card">
-            <h3>Low-Cost 3D Printer & Recycled PET Filament</h3>
+        <div class="cards">
 
-            <p>
-                Development of a low-cost 3D printing system and
-                investigation of filament generation from recycled
-                PET bottles.
-            </p>
-        </div>
+            <div class="card">
+                <h3>Low-Cost 3D Printer & Recycled PET Filament</h3>
+                <p>
+                    Development of a low-cost 3D printing system and
+                    investigation of filament generation from recycled
+                    PET bottles.
+                </p>
+            </div>
 
-        <br>
+            <div class="card">
+                <h3>Finite Element Analysis of 3D Printed Structures</h3>
+                <p>
+                    Numerical investigation and validation of the
+                    mechanical behavior of 3D printed polymer structures
+                    using finite element analysis.
+                </p>
+            </div>
 
-        <div class="card">
-            <h3>Finite Element Analysis of 3D Printed Structures</h3>
-
-            <p>
-                Numerical investigation and validation of mechanical
-                behavior of 3D printed polymer structures using
-                finite element analysis.
-            </p>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
 
-        <p>
-            Email: Your university email
-        </p>
-
-        <p>
-            LinkedIn: Coming soon
-        </p>
-
-        <p>
-            GitHub: ankon-debnath
-        </p>
+        <p>Email: Your university email</p>
+        <p>LinkedIn: Your LinkedIn profile</p>
+        <p>GitHub: ankon-debnath</p>
     </section>
 
     <footer>
